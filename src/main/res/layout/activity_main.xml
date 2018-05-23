@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.scorekeeperapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player1"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player1_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player2"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player2_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player3"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player3_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batting"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player3_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player4"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player4_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player4_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player5"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player5_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player5_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player6"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player6_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batting"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/player6_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="48"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player7"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player7_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/player7_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player8"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player8_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/player8_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player9"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player9_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/player9_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="0dp">
+        <TextView
+            android:id="@+id/player10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player10"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player10_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/player10_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:id="@+id/player11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player11"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/player11_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/player11_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXTRA RUNS GIVEN"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/extra_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wickets: "
+            android:layout_weight="3"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/wickets_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overs: "
+            android:layout_weight="3"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/overs_bowled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 0"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balls: "
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+        <TextView
+            android:id="@+id/balls_bowled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:minWidth="25dp"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batting Batsman: "
+            android:layout_weight="2" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+            <RadioButton
+                android:id="@+id/batsman1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/batsman2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/no_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No Ball"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:onClick="onClickNoBall"/>
+        <Button
+            android:id="@+id/wide_ball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wide"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_background"
+            android:onClick="onClickWideBall"/>
+        <Button
+            android:id="@+id/out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Out"
+            android:layout_margin="4dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/out_button_background"
+            android:onClick="onClickOUT"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/six_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+6"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:onClick="onClickSixRuns"/>
+        <Button
+            android:id="@+id/four_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+4"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:onClick="onClickFourRuns"/>
+        <Button
+            android:id="@+id/three_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+3"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:onClick="onClickThreeRuns"/>
+        <Button
+            android:id="@+id/two_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+2"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:onClick="onClickTwoRuns"/>
+        <Button
+            android:id="@+id/one_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+1"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:onClick="onClickOneRun"/>
+        <Button
+            android:id="@+id/zero_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="32dp"
+            android:minWidth="32dp"
+            android:padding="12dp"
+            android:text="+0"
+            android:textSize="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="2dp"
+            android:clickable="true"
+            android:onClick="onClickZeroRun"/>
+
+    </LinearLayout>
+</LinearLayout>
